@@ -1,8 +1,8 @@
 /**
  * Represents a student with name, age and studentID.
  *
- * @Author Matthew
- * @Version 2023-08-28
+ * @author Matthew
+ * @version 2023-08-28
  */
 public class Student {
     private String name;
