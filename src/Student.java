@@ -20,9 +20,9 @@ public class Student {
 
     /**
      * Creates an instance of Student
-     * @param studName
-     * @param studAge
-     * @param studID
+     * @param studName Students name
+     * @param studAge Students age
+     * @param studID Students ID
      */
     public Student(String studName, int studAge, String studID){
         name = studName;
@@ -32,7 +32,7 @@ public class Student {
 
     /**
      * gets student name
-     * @return
+     * @return name of the student
      */
     public String getName(){
         return name;
@@ -40,7 +40,7 @@ public class Student {
 
     /**
      * gets student age
-     * @return
+     * @return age of the student
      */
     public int getAge(){
         return age;
@@ -48,7 +48,7 @@ public class Student {
 
     /**
      * gets studentID
-     * @return
+     * @return ID of the student
      */
     public String getStudentID(){
         return studentID;
