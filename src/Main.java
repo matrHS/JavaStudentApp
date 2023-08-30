@@ -12,7 +12,7 @@ public class Main {
    *
    * @param student to print info from
    */
-  private static void printStudentInfo(Student student){
+  private static void printStudentInfo(Student student) {
     System.out.printf("\nName: " + student.getName()
             + " \nage: " + student.getAge()
             + " \nstudID: " + student.getStudentId() + "\n");
