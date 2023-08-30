@@ -87,13 +87,4 @@ public class Student {
   public void setId(String newStudentId) {
     studentId = newStudentId;
   }
-
-  /**
-   * Prints out information about the student to the console.
-   */
-  public void printInfo() {
-    System.out.printf("\nStud3 Name: " + name
-            + " \nStud3 age: " + age
-            + " \nStud3 studID: " + studentId + "\n");
-  }
 }

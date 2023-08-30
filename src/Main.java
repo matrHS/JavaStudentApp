@@ -6,6 +6,19 @@
  * @version 2023-08-28
  */
 public class Main {
+
+  /**
+   * Method for printing student info to console.
+   *
+   * @param student to print info from
+   */
+  private static void printStudentInfo(Student student){
+    System.out.printf("\nName: " + student.getName()
+            + " \nage: " + student.getAge()
+            + " \nstudID: " + student.getStudentId() + "\n");
+
+  }
+
   /**
    * Main method.
    *
@@ -17,8 +30,8 @@ public class Main {
     Student stud1 = new Student();
     Student stud2 = new Student("Matthew", 25, "062532");
     // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-    stud1.printInfo();
-    stud2.printInfo();
+    printStudentInfo(stud1);
+    printStudentInfo(stud2);
     float avgAge = (stud1.getAge() + stud2.getAge()) / 2.0f;
     System.out.printf("The average age of the students is: " + avgAge);
   }
