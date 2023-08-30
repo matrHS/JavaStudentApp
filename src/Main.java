@@ -33,6 +33,7 @@ public class Main {
     printStudentInfo(stud1);
     printStudentInfo(stud2);
     float avgAge = (stud1.getAge() + stud2.getAge()) / 2.0f;
+    avgAge = (stud1.getAge() + stud2.getAge()) / 2.0f;
     System.out.printf("The average age of the students is: " + avgAge);
   }
 }
