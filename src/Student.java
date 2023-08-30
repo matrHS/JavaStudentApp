@@ -5,16 +5,16 @@
  * @version 2023-08-28
  */
 public class Student {
-  private String name;
-  private int age;
-  private String studentId;
+  private String name = "Joe";
+  private int age = 0;
+  private String studentId = "000000";
 
   /**
    * Creates an instance of Student.
    */
   public Student() {
     name = "Joe";
-    age = 18;
+    age = 0;
     studentId = "000000";
   }
 
@@ -26,9 +26,9 @@ public class Student {
    * @param studId   Students ID
    */
   public Student(String studName, int studAge, String studId) {
-    name = studName;
-    age = studAge;
-    studentId = studId;
+    setName(studName);
+    setAge(studAge);
+    setId(studId);
   }
 
   /**
@@ -64,7 +64,10 @@ public class Student {
    * @param newName is the new name of the student
    */
   public void setName(String newName) {
-    name = newName;
+    if (!newName.isEmpty()) {
+      name = newName;
+    }
+
   }
 
   /**
@@ -74,17 +77,18 @@ public class Student {
    * @param newAge age to be set. Must be a positive number
    */
   public void setAge(int newAge) {
-    if (newAge > 0) {
-      age = newAge;
-    }
+    age = Math.max(0, newAge);
   }
 
   /**
-   * Sets the StudentID.
+   * Sets the StudentID if it is equals to 6 character.
    *
    * @param newStudentId the ID to be set.
    */
   public void setId(String newStudentId) {
-    studentId = newStudentId;
+    if (newStudentId.length() == 6) {
+      studentId = newStudentId;
+    }
+
   }
 }
