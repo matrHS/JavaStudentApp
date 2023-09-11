@@ -45,4 +45,14 @@ public class StudentRegister {
   public int getNumberOfStudents() {
     return students.size();
   }
+
+  /**
+   * Returns the student object at the index i.
+   *
+   * @param i index position to get the student from.
+   * @return student object at given index.
+   */
+  public Student getStudentAt(int i) {
+    return students.get(i);
+  }
 }

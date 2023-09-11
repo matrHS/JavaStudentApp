@@ -32,6 +32,8 @@ public class Main {
     studentRegister.addStudent(new Student("Michael", 19, "062224"));
 
     System.out.println(studentRegister.getNumberOfStudents());
-
+    for (int i = 0; i < studentRegister.getNumberOfStudents(); i++) {
+      System.out.println(studentRegister.getStudentAt(i).getName());
+    }
   }
 }
