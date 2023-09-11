@@ -25,7 +25,13 @@ public class Main {
    * @param args for the Main method
    */
   public static void main(String[] args) {
+    StudentRegister studentRegister = new StudentRegister();
 
+    studentRegister.addStudent(new Student("Matthew", 24, "000001"));
+    studentRegister.addStudent(new Student("George", 58, "000042"));
+    studentRegister.addStudent(new Student("Michael", 19, "062224"));
+
+    System.out.println(studentRegister.getNumberOfStudents());
 
   }
 }
