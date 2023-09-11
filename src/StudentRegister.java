@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Represents a register of students.
@@ -54,5 +55,25 @@ public class StudentRegister {
    */
   public Student getStudentAt(int i) {
     return students.get(i);
+  }
+
+  /**
+   * Returns entire registry.
+   *
+   * @return entire registry og Student objects.
+   */
+  public List<Student> getStudents() {
+    return students;
+  }
+
+  /**
+   * Returns a subset of the student register up to stopIndex.
+   *
+   * @param startIndex first student to be returned.
+   * @param stopIndex last student to be returned.
+   * @return list of students within the indicies.
+   */
+  public List<Student> getStudentSubset(int startIndex, int stopIndex) {
+    return students.subList(Math.max(0, startIndex), Math.min(stopIndex, students.size()));
   }
 }

@@ -32,8 +32,12 @@ public class Main {
     studentRegister.addStudent(new Student("Michael", 19, "062224"));
 
     System.out.println(studentRegister.getNumberOfStudents());
-    for (int i = 0; i < studentRegister.getNumberOfStudents(); i++) {
-      System.out.println(studentRegister.getStudentAt(i).getName());
+    for (Student student : studentRegister.getStudents()) {
+      System.out.println(student.getName());
+    }
+
+    for (Student student : studentRegister.getStudentSubset(0, 9)) {
+      System.out.println(student.getName());
     }
   }
 }
