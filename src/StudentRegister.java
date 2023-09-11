@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * Represents a register of students.
  * <p>
@@ -16,5 +18,31 @@
  * @version 2023-09-11
  */
 public class StudentRegister {
+  private ArrayList<Student> students;
 
+  /**
+   * Creates an instance of StudentRegister.
+   *
+   */
+  public StudentRegister() {
+    students = new ArrayList<>();
+  }
+
+  /**
+   * Adds student to the StudentRegister.
+   *
+   * @param student Student object to be added.
+   */
+  public void addStudent(Student student) {
+    students.add(student);
+  }
+
+  /**
+   * Returns the number of students in the register.
+   *
+   * @return the number of students in the register.
+   */
+  public int getNumberOfStudents() {
+    return students.size();
+  }
 }
